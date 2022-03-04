@@ -28,7 +28,7 @@ app.route('/api/atm').post((request, response) => {
   atm.id = firstId;
   ATMS.push(atm);
   
-  response.status(201).send(course);
+  response.status(201).send(atm);
 });
 
 app.route('/api/atm/:id').put((request, response) => {

@@ -1,0 +1,35 @@
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  #btnCadastrar {
+    float: right;
+    width: 20%;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #btnCadastrar:hover {
+      background-color: orange;
+      transition:all 0.3s ease-in-out;
+  }
+  
+
+form {
+    padding-top: 20px;
+}
+
+.invalido {
+  background-color: rgb(201, 65, 65);
+}
+  
