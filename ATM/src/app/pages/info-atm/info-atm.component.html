@@ -1,0 +1,42 @@
+<h2>Atm Info</h2>
+
+<hr />
+
+<form #atmForm="ngForm" *ngIf="atm">
+    <label>Numero do Terminal</label>
+    <input type="text" [(ngModel)]="atm.numeroTerminal" required name="numeroTerminal" #atmNumeroTerminal="ngModel"
+    [ngClass]="{'invalido' : atmNumeroTerminal.invalid}">
+    <div *ngIf="atmNumeroTerminal.invalid" style="padding-bottom:10px; color: red">
+        <span>Numero do Terminal obrigatorio</span>
+    </div>
+
+    <label>Agencia</label>
+    <input type="text" [(ngModel)]="atm.agencia" required name="agencia" #atmAgencia="ngModel"  
+    [ngClass]="{'invalido' : atmAgencia.invalid}">
+    <div *ngIf="atmAgencia.invalid" style="padding-bottom:10px; color: red">
+        <span>Agencia obrigatoria</span>
+    </div>
+    
+    <label>Tipo do Terminal</label>
+    <input type="text" [(ngModel)]="atm.tipoTerminal" required name="tipoTerminal" #atmTipoTerminal="ngModel"
+    [ngClass]="{'invalido' : atmTipoTerminal.invalid}">
+    <div *ngIf="atmTipoTerminal.invalid" style="padding-bottom:10px; color: red">
+        <span>Tipo do Terminal obrigatorio</span>
+    </div>
+
+    <label>Modelo</label>
+    <input type="text" [(ngModel)]="atm.modelo" required name="modelo" #atmModelo="ngModel"
+    [ngClass]="{'invalido' : atmModelo.invalid}">
+    <div *ngIf="atmModelo.invalid" style="padding-bottom:10px; color: red">
+        <span>Modelo obrigatorio</span>
+    </div>
+
+    <label>Fabricação</label>
+    <input type="text" [(ngModel)]="atm.fabricacao" required name="fabricacao" #atmFabricacao="ngModel"
+    [ngClass]="{'invalido' : atmFabricacao.invalid}">
+    <div *ngIf="atmFabricacao.invalid" style="padding-bottom:10px; color: red">
+        <span>Fabricação obrigatorio</span>
+    </div>
+
+    <button id="btnSalvar" [disabled]="atmForm.invalid" (click)="salvar()">Salvar</button>
+</form>
