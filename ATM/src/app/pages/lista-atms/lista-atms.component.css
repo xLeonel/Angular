@@ -1,0 +1,55 @@
+* {
+box-sizing: border-box;
+}
+
+h2 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+table {
+text-align: center;
+width: 700px;
+margin: 20px auto;
+font-family: sans-serif;
+border-bottom: 5px solid #009688;
+}
+
+th,
+td {
+padding: 10px;
+}
+
+th {
+background-color: #404040;
+color: white;
+}
+
+td {
+background-color: #eee;
+}
+
+span {
+padding: 5px 10px;
+margin: 3px;
+color: white;
+}
+
+.blue {
+background-color: #03a9f4;
+cursor: pointer;
+}
+
+.pink {
+background-color: #e91e63;
+cursor: pointer;
+}
+
+.blue:hover {
+    color: black
+}
+
+.pink:hover {
+    color: black
+}
+  
