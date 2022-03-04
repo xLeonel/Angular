@@ -3,7 +3,7 @@
 # Requisitos
 
 - Node (seguir o ppt)
-- Angular (npm install -g @angular/cli@9.1.13)
+- Angular (npm install -g @angular/cli@9.1.2)
 
 # Comandos
 
